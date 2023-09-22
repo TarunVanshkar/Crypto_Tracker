@@ -1,0 +1,36 @@
+.modal-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-items {
+  outline: none;
+  background-color: var(--darkgrey);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  z-index: 100;
+  border-radius: 1rem;
+  /* transition: all 3s; */
+}
+
+@media only screen and (max-width: 500px) {
+  .modal-div {
+    align-items: flex-end;
+  }
+
+  .modal-items {
+    width: 100% !important;
+    border-radius: 0;
+    height: 150px;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .modal-items {
+    height: 100px;
+  }
+}
